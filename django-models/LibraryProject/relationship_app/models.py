@@ -1,5 +1,4 @@
 from django.db import models
-from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
@@ -94,4 +93,3 @@ class Librarian(models.Model):
     # String representation of the Librarian object to return the library's name followed by 'Librarian' for easy identification.
     def __str__(self):
         return f"{self.library.name} - Librarian"
-# Create your models here.
